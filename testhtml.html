@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <link rel="shortcut icon" href="assets/image/logo_favi.gif">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link type="text/css" href="assets/css/lightbox.css" rel="stylesheet" media="all">
+  <link type="text/css" href="assets/css/style.css" rel="stylesheet" media="all">
+  <script type="text/javascript" src="assets/js/jquery.inview.js"></script>
+  <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-80731168-2', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <title>株式会社うちゅう</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header-navi">
+    <div class="navi navi__display_top">
+      <nav class="navi__nav">
+        <ul class="navi__ul">
+          <a href="school.html" class="list">
+            <li class="list__li">SCHOOL</li>
+          </a>
+          <a href="camp.html" class="list">
+            <li class="list__li">CAMP</li>
+          </a>
+          <a href="index.html" class="list js-list_include_img">
+            <li class="list__li list__li_include_img">
+              <img class="list__img" src="assets/image/logo_cmyk_03.jpg">
+            </li>
+          </a>
+          <a href="project.html" class="list">
+            <li class="list__li">PROJECT</li>
+          </a>
+          <a href="contact.html" class="list">
+            <li class="list__li">CONTACT</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+  <div id="js-navi" class="navi js-navi__display_disappear">
+    <nav class="navi__nav">
+      <ul class="navi__ul">
+        <a href="school.html" class="list">
+          <li class="list__li">SCHOOL</li>
+        </a>
+        <a href="camp.html" class="list">
+          <li class="list__li">CAMP</li>
+        </a>
+        <a href="index.html" class="list">
+          <li class="list__li">TOP</li>
+        </a>
+        <a href="project.html" class="list">
+          <li class="list__li">PROJECT</li>
+        </a>
+        <a href="contact.html" class="list">
+          <li class="list__li">CONTACT</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+  <!-- END HEADER -->
+  <!-- TOP -->
+  <div class="eye-catch js-fade_on" style="display:none">
+    <img class="eye-catch__img" id="js-adjust_background" src="assets/image/school.jpg" />
+    <div class="eye-catch__text eye-catch__text_type_contact" id="js-adjust_text">
+      <h1 class="eye-catch__title">お問い合わせ</h1>
+    </div>
+  </div>
+  <!-- END TOP -->
+  <!-- CONTENTS -->
+  <div class="contents">
+    <div class="form-simple">
+      <div class="form-simple__form-div">
+        <div class="form-simple__title">CONTACT</div>
+        <form class="form-simple__form" id="js-form-simple__form" method="post" action="assets/functions/sendMailContact.php">
+          <table class="form-simple__table">
+            <tbody>
+              <tr class="form-simple__tr">
+                <th class="form-simple__th" id="js-form-simple__th_type_belonging">
+                  ご所属
+                  <span>あああsdf</span>
+                </th>
+                <td class="form-simple__td">
+                  <input class="form-simple__input" type="text" name="form_belonging" value="" placeholder="例) 株式会社うちゅう 開発部長">
+                </td>
+              </tr>
+              <tr class="form-simple__tr">
+                <th class="form-simple__th" id="js-form-simple__th_type_name">
+                  お名前
+                  <span class="form-simple__form-alert js-form-simple__form-alert_display_none" id="js-form-alert__name">
+                    <br>*必須項目です。
+                  </span>
+                </th>
+                <td class="form-simple__td">
+                  <input class="form-simple__input" type="text" name="form_name" value="" placeholder="例) 宇宙 太郎" autocomplete="name">
+                </td>
+              </tr>
+              <tr class="form-simple__tr">
+                <th class="form-simple__th" id="js-form-simple__th_type_mail">
+                  メールアドレス
+                  <span class="form-simple__form-alert js-form-simple__form-alert_display_none" id="js-form-alert__mail">
+                    <br>*必須項目です。
+                  </span>
+                </th>
+                <td class="form-simple__td">
+                  <input class="form-simple__input" type="text" name="form_mail" value="" placeholder="例) uchu@xxxx.xx" autocomplete="mail">
+                </td>
+              </tr>
+              <tr class="form-simple__tr">
+                <th class="form-simple__th" id="js-form-simple__th_type_tel">
+                  電話番号
+                  <span class="form-simple__form-alert js-form-simple__form-alert_display_none" id="js-form-alert__tel">
+                    <br>*必須項目です。
+                  </span>
+                </th>
+                <td class="form-simple__td">
+                  <input class="form-simple__input" type="tel" name="form_tel" value="" placeholder="例) 080-xxxx-xxxx">
+                </td>
+              </tr>
+              <tr class="form-simple__tr">
+                <th class="form-simple__th" id="js-form-simple__th_type_concerning">
+                  ご用件
+                  <span class="form-simple__form-alert js-form-simple__form-alert_display_none" id="js-form-alert__concerning">
+                    <br>*必須項目です。
+                  </span>
+                </th>
+                <td class="form-simple__td">
+                  <textarea class="form-simple__input" rows="8" name="form_concerning" value="" placeholder=""></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <input class="form-simple__submit" type="submit" value="送信" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- END CONTENTS WRAPPER -->
+  <footer>
+    <nav class="footer">
+      <div>
+        <p class="footer__info-p">Copyright (c) 2016 Uchu co., Ltd. All Rights Reserved.</p>
+      </div>
+    </nav>
+  </footer>
+  <script>
+  $(function() {
+    $('.js-move-fade_on').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+      if (isInView) {
+        $(this).stop().addClass('js-move-fade_off');
+      }
+
+    });
+  });
+  </script>
+  <script>
+  $(function() {
+    $('.js-fade_on').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+      if (isInView) {
+        $(this).stop().addClass('js-fade_off');
+      }
+
+    });
+  });
+  </script>
+  <script>
+  //ver1.1
+  var $nav_bar = $('#js-navi');
+  var sleep = setInterval(function() {
+    if ($(window).scrollTop() > 110) {
+      nav_outScroll();
+
+    } else if ($(window).scrollTop() <= 110) {
+      nav_inScroll();
+    }
+  }, 150);
+
+  $('body').on('touchmove', function() {
+    if ($(window).scrollTop() > 110) {
+      nav_outScroll();
+
+    } else if ($(window).scrollTop() <= 110) {
+      nav_inScroll();
+    }
+  });
+  </script>
+  <script>
+  function nav_inScroll() {
+    $nav_bar.addClass('js-navi__display_disappear');
+    $nav_bar.removeClass('js-navi__display_appear');
+  }
+
+  function nav_outScroll() {
+    $nav_bar.addClass('js-navi__display_appear');
+    $nav_bar.removeClass('js-navi__display_disappear');
+  }
+  </script>
+  <!-- 入力項目のチェック -->
+  <script>
+  $(document).ready(function() {
+
+    $("#js-form-simple__form").submit(function() {
+      var max_input = 2000;
+      var form_belonging = $("input[name='form_belonging']");
+      var form_name = $("input[name='form_name']");
+      var form_mail = $("input[name='form_mail']");
+      var form_tel = $("input[name='form_tel']");
+      var form_concerning = $("textarea[name='form_concerning']");
+      if (form_name.val() == '' || form_mail.val() == '' || form_tel.val() == '' || form_concerning.val() == '') {
+        if (form_name.val() == '') {
+          $("#js-form-alert__name").removeClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__name").addClass("js-form-simple__form-alert_display_inline");
+          $("#js-form-simple__th_type_name").addClass("js-form-simple__th_line-height_low");
+        } else {
+          $("#js-form-alert__name").addClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__name").removeClass("js-form-simple__form-alert_display_inline");
+        }
+
+        if (form_mail.val() == '') {
+          $("#js-form-alert__mail").removeClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__mail").addClass("js-form-simple__form-alert_display_inline");
+          $("#js-form-simple__th_type_mail").addClass("js-form-simple__th_line-height_low");
+        } else {
+          $("#js-form-alert__mail").addClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__mail").removeClass("js-form-simple__form-alert_display_inline");
+        }
+
+        if (form_tel.val() == '') {
+          $("#js-form-alert__tel").removeClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__tel").addClass("js-form-simple__form-alert_display_inline");
+          $("#js-form-simple__th_type_tel").addClass("js-form-simple__th_line-height_low");
+        } else {
+          $("#js-form-alert__tel").addClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__tel").removeClass("js-form-simple__form-alert_display_inline");
+        }
+
+        if (form_concerning.val() == '') {
+          $("#js-form-alert__concerning").removeClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__concerning").addClass("js-form-simple__form-alert_display_inline");
+          $("#js-form-simple__th_type_concerning").addClass("js-form-simple__th_line-height_low");
+        } else {
+          $("#js-form-alert__concerning").addClass("js-form-simple__form-alert_display_none");
+          $("#js-form-alert__concerning").removeClass("js-form-simple__form-alert_display_inline");
+        }
+
+        return false;
+
+        // 入力文字数制限
+      } else if (form_belonging.val().length > max_input || form_name.val().length > max_input || form_mail.val().length > max_input || form_tel.val().length > max_input || form_concerning.val().length > max_input) {
+
+        alert('申し訳ございません。各入力項目は' + max_input.toString() + '文字以下でお願いいたします。');
+        return false;
+
+      } else {
+        $("#js-form-simple__form").submit();
+      }
+
+    });
+
+  });
+  </script>
+</body>
+
+</html>
